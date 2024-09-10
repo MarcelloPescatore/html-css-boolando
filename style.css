@@ -1,0 +1,17 @@
+/* #region common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-header: #ff6900;
+    --bg-footer: #1a1a1a;
+    --bg-main: #ffffff;
+    --cl-primary_text: #000000;
+    --cl-secondary_text: #ffffff;
+    --bg_flag-discount: #ff0000;
+    --bg_flag-sostenability: #008000;
+}
+/* #endregion common */
