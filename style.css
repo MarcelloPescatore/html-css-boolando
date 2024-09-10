@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 130%;
 }
 
 :root{
@@ -12,7 +13,7 @@
     --cl-primary_text: #000000;
     --cl-secondary_text: #ffffff;
     --bg_flag-discount: #ff0000;
-    --bg_flag-sostenability: #008000;
+    --bg_flag-sustainability: #008000;
 }
 .py-2{
     padding: 2rem 0;
@@ -29,18 +30,21 @@
 img{
     max-width: 100%;
 }
-/* #endregion common */
 
-/* #region header */
-header{
-    background-color: var(--bg-header);
-}
 .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 70%;
     margin: auto;
+}
+
+
+/* #endregion common */
+
+/* #region header */
+header{
+    background-color: var(--bg-header);
 }
 
 #categories{
@@ -75,3 +79,78 @@ header{
 }
 
 /* #endregion header */
+
+/* #region main */
+main>.container{
+    flex-direction: column;
+}
+
+.row_products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.products{
+    position: relative;
+    max-width: 32%;
+    max-height: 100%;
+}
+
+.like{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    background-color: var(--bg-main);
+    padding: 0.5rem 1rem;
+}
+
+.flags{
+    position: absolute;
+    left: 0;
+    bottom: 6rem;
+    display: flex;
+    gap: 0.25rem;
+
+    .discount{
+        font-size: 0.75rem;
+        font-weight: bold;
+        background-color: var(--bg_flag-discount);
+        color: var(--cl-secondary_text);
+        padding: 0.25rem 0.75rem;
+    }
+
+    .sustainability{
+        font-size: 0.75rem;
+        font-weight: bold;
+        background-color: var(--bg_flag-sustainability);
+        color: var(--cl-secondary_text);
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+.info-products{
+    .brand{
+        font-size: 0.75rem;
+        font-weight: lighter;
+    }
+
+    .model{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .pricing{
+        font-size: 1rem;
+        font-weight: bolder;
+        color: var(--bg_flag-discount);
+    }
+
+    .line{
+        text-decoration:line-through;
+        color: var(--cl-primary_text);
+    }
+}
+
+/* #endregion main */
