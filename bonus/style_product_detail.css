@@ -37,8 +37,6 @@ img{
 
 .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 70%;
     margin: auto;
     gap: 1rem;
@@ -117,34 +115,10 @@ header{
 #details{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
     width: 50%;
-
-    #price{
-        display: flex;
-        padding: 0.5rem 0;
-
-        h3{
-            color: var(--cl-primary_text);
-            font-size: 1.5rem;
-            font-weight: bolder;
-            vertical-align: middle;
-            padding: 0;
-        }
-        p{
-            font-size: 1.5rem;
-            vertical-align: middle;
-            font-weight: bold;
-            padding: 0 0 0 1rem;
-            color: #ff0000;
-            span{
-                font-size: 1.25rem;
-                color: var(--cl-primary_text);
-                text-decoration: line-through;
-                font-weight: lighter;
-                padding-left: 5px;
-            }
-        }
-    }
 
     #description{
         h3{
@@ -159,22 +133,56 @@ header{
             font-size: 1.1rem;
         }
 
-    }
+    } 
 
-    #button{
-        padding: 0.5rem 0;
-        button{
-            background-color: #008000;
-            padding: 1rem 1.5rem;
-            font-size: 1rem;
-            color: var(--cl-secondary_text);
-            font-weight: bold;
-            border: none;
-            border-radius: 2rem;
-            cursor: pointer;
+    #buy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #button{
+            padding: 0.5rem 0;
+            button{
+                background-color: #008000;
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+                color: var(--cl-secondary_text);
+                font-weight: bold;
+                border: none;
+                border-radius: 2rem;
+                cursor: pointer;
+            }
+        }
+    
+        #price{
+            display: flex;
+            padding: 0.5rem 0;
+    
+            h3{
+                color: var(--cl-primary_text);
+                font-size: 1.5rem;
+                font-weight: bolder;
+                vertical-align: middle;
+                padding: 0;
+            }
+            p{
+                font-size: 1.5rem;
+                vertical-align: middle;
+                font-weight: bold;
+                padding: 0 0 0 1rem;
+                color: #ff0000;
+                span{
+                    font-size: 1.25rem;
+                    color: var(--cl-primary_text);
+                    text-decoration: line-through;
+                    font-weight: lighter;
+                    padding-left: 5px;
+                }
+            }
         }
     }
+    
 }
+
 
 
 
