@@ -98,6 +98,9 @@ header{
 /* #endregion header */
 
 /* #region main */
+main{
+    margin: 2rem 0;
+}
 main>.container{
     flex-direction: column;
 }
