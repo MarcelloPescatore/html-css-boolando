@@ -127,7 +127,11 @@ main>.container{
     background-color: var(--bg-main);
     padding: 0.5rem 1rem;
 }
-
+/* #region hover like */
+.like:hover{
+    color: #ff0000;
+}
+/* #endregion hover like */
 .flags{
     position: absolute;
     left: 0;
