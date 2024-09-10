@@ -137,12 +137,12 @@ main>.container{
     background-color: var(--bg-main);
     padding: 0.5rem 1rem;
 }
-/* #region hover like */
+/* #region hover like bonus */
 .like:hover{
     color: #ff0000;
     cursor: pointer;
 }
-/* #endregion hover like */
+/* #endregion hover like bonus*/
 .flags{
     position: absolute;
     left: 0;
@@ -217,3 +217,12 @@ footer>.container{
     color: var(--cl-secondary_text);
 }
 /* #endregion footer */
+
+/* #region bonus page */
+.products{
+    a{
+        text-decoration: none;
+        color: var(--cl-primary_text);
+    }
+}
+/* #endregion bonus page */
