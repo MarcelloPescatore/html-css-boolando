@@ -37,6 +37,7 @@ img{
 
 .container{
     display: flex;
+    align-items: center;
     width: 70%;
     margin: auto;
     gap: 1rem;
@@ -109,6 +110,7 @@ header{
 /* #region main */
 #image_product{
     width: 50%;
+    display: flex;
     position: relative;
 }
 
