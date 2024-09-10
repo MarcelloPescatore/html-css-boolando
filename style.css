@@ -140,6 +140,7 @@ main>.container{
 /* #region hover like */
 .like:hover{
     color: #ff0000;
+    cursor: pointer;
 }
 /* #endregion hover like */
 .flags{
