@@ -115,6 +115,8 @@ main>.container{
     max-height: 100%;
 }
 
+/* #region hover products */
+
 .like{
     position: absolute;
     right: 0;
@@ -197,3 +199,15 @@ footer>.container{
     color: var(--cl-secondary_text);
 }
 /* #endregion footer */
+
+
+    .hover{
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+
+    .products:hover .hover{
+        display: inline;
+    }
+/* #endregion hover products */
