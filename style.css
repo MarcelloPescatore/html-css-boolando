@@ -1,3 +1,4 @@
+
 /* #region common */
 *{
     margin: 0;
@@ -117,8 +118,17 @@ main>.container{
     max-width: 32%;
     max-height: 100%;
 }
-
 /* #region hover products */
+.hover{
+    display: none;
+    position: absolute;
+    right: 0;
+}
+
+.products:hover .hover{
+    display: inline;
+  }
+/* #endregion hover products */
 
 .like{
     position: absolute;
@@ -206,15 +216,3 @@ footer>.container{
     color: var(--cl-secondary_text);
 }
 /* #endregion footer */
-
-
-    .hover{
-        display: none;
-        position: absolute;
-        right: 0;
-    }
-
-    .products:hover .hover{
-        display: inline;
-    }
-/* #endregion hover products */
