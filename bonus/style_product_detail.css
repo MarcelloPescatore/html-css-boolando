@@ -41,6 +41,7 @@ img{
     align-items: center;
     width: 70%;
     margin: auto;
+    gap: 1rem;
 }
 
 .list{
@@ -59,6 +60,16 @@ img{
             padding: 0 5px;
         }
     }
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 h3{
@@ -98,6 +109,86 @@ header{
 /* #endregion header */
 
 /* #region main */
+#image_product{
+    width: 50%;
+    position: relative;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    #price{
+        display: flex;
+        padding: 0.5rem 0;
+
+        h3{
+            color: var(--cl-primary_text);
+            font-size: 1.5rem;
+            font-weight: bolder;
+            vertical-align: middle;
+            padding: 0;
+        }
+        p{
+            font-size: 1.5rem;
+            vertical-align: middle;
+            font-weight: bold;
+            padding: 0 0 0 1rem;
+            color: #ff0000;
+            span{
+                font-size: 1.25rem;
+                color: var(--cl-primary_text);
+                text-decoration: line-through;
+                font-weight: lighter;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    #description{
+        h3{
+            color: var(--cl-primary_text);
+            font-size: 1.5rem;
+            font-weight: bolder;
+            vertical-align: middle;
+            padding: 1rem 0 0.5rem 0;
+        }
+
+        p{
+            font-size: 1.1rem;
+        }
+
+    }
+
+    #button{
+        padding: 0.5rem 0;
+        button{
+            background-color: #008000;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            color: var(--cl-secondary_text);
+            font-weight: bold;
+            border: none;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+    /* #region hover products */
+    .hover{
+        display: none;
+        position: absolute;
+        right: 0;
+    }
+
+    #image_product:hover .hover{
+        display: inline;
+    }
+    /* #endregion hover products */
 
 /* #endregion main */
 
